@@ -77,4 +77,4 @@ async function generateInterviewReport({resume, selfDescription, jobDescription}
 
 
 
-module.exports = invokeGeminiAi 
+module.exports = generateInterviewReport
