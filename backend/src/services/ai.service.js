@@ -75,8 +75,6 @@ async function generateInterviewReport({resume, selfDescription, jobDescription}
     console.log(JSON.parse(response.text))
 }
 
-async function invokeGeminiAi() {
-    
-}
+
 
 module.exports = invokeGeminiAi 
