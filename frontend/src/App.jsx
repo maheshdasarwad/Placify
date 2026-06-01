@@ -7,7 +7,7 @@ import Dashboard from "./pages/Dashboard"
 import NewInterview from "./pages/NewInterview"
 import InterviewReport from "./pages/InterviewReport"
 import VoiceInterview from "./pages/VoiceInterview"
-// import SessionReport from "./pages/SessionReport"
+import SessionReport from "./pages/SessionReport"
 
 function PrivateRoute({ children }) {
     const { user, loading } = useAuth()
@@ -24,9 +24,7 @@ export default function App() {
             <Route path="/interview/new" element={<PrivateRoute><NewInterview /></PrivateRoute>}   />
             <Route path="/interview/:id" element={<PrivateRoute><InterviewReport /></PrivateRoute>} />
             <Route path="/interview/:id/session" element={<PrivateRoute><VoiceInterview /></PrivateRoute>} />
-            {/* 
-           
-            <Route path="/session/:id/report" element={<PrivateRoute><SessionReport /></PrivateRoute>} /> */} 
+            <Route path="/session/:id/report" element={<PrivateRoute><SessionReport /></PrivateRoute>} />
 
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
