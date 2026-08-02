@@ -48,3 +48,5 @@ A full-stack web application that combines AI-powered intelligence with document
 1. Navigate to the backend directory:
    ```bash
    cd backend
+   npm install
+   npm run dev
